@@ -8,7 +8,7 @@ Easiest way to use is to place the adhelper.ps1 file in the directory you run Po
 
 Example in PowerShell:
 
-C:\Windows\System32> . ./adhelper.ps1
+<code>C:\Windows\System32> . ./adhelper.ps1</code>
 
 There is also a .psm1 file that can be added as a module in PowerShell. Navigate to C:\Windows\System32\PowerShell\v1.0\Modules and create a folder named adhelper.
 
