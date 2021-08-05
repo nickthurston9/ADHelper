@@ -1,5 +1,73 @@
 #PowerShell AD Helper
 
+<# 
+
+.SYNOPSIS
+
+AD Tool used to find users by first name and last name. Will also assist in finding locked out users and unlocking accounts.
+
+
+.DESCRIPTION
+
+ADHelper is a tool that can find users, unlock users, and show what users are locked out.
+
+The 'gadu' command is useful to find the user's information including title and manager.
+
+The 'unlock' command is useful to unlock users
+
+
+.LINK
+
+https://docs.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2019-ps
+
+.EXAMPLE
+
+gadu Jane.Doe
+
+
+
+DistinguishedName : CN=Jane Doe,OU=Users,DC=<domain>,DC=com
+Enabled           : True
+GivenName         : Jane
+Name              : Jane Doe
+ObjectClass       : user
+ObjectGUID        : #############################
+SamAccountName    : Jane.Doe
+SID               : #############################
+Surname           : Doe
+UserPrincipalName : Jane.Doe@<domain>.com
+
+.EXAMPLE
+
+LockedOut
+
+DistinguishedName : CN=Jane Doe,OU=Users,DC=<domain>,DC=com
+Enabled           : True
+GivenName         : Jane
+LockedOut         : True
+Name              : Jane Doe
+ObjectClass       : user
+ObjectGUID        : #############################
+SamAccountName    : Jane.Doe
+SID               : #############################
+Surname           : Doe
+UserPrincipalName : Jane.Doe@<domain>.com
+
+.EXAMPLE
+
+unlock Jane.Doe
+
+.EXAMPLE
+
+firstNameSearch
+
+.EXAMPLE
+
+lastNameSearch
+
+
+#>
+
 Clear-Host
 
 $date = date
