@@ -151,9 +151,9 @@ echo ""
 echo "Searching..."
 echo ""
 echo ""
-sleep 3
+sleep 1
 
-Get-ADUser -Filter * -Properties Title,Manager | where {$_.GivenName -like "$fname*"} | select GivenName, SurName, Samaccountname,Title,Manager
+Get-ADUser -Filter * -Properties Title,Department,Manager | where {$_.GivenName -like "$fname*"} | select GivenName, SurName, Samaccountname,Title,Manager
 
 echo ""
 echo ""
@@ -177,9 +177,9 @@ echo ""
 echo "Searching..."
 echo ""
 echo ""
-sleep 3
+sleep 1
 
-Get-ADUser -Filter * -Properties Title,Manager | where {$_.SurName -like "$lname*"} | select GivenName, SurName, Samaccountname,Title,Manager
+Get-ADUser -Filter * -Properties Title,Department,Manager | where {$_.SurName -like "$lname*"} | select GivenName, SurName, Samaccountname,Title,Manager
 
 echo ""
 echo ""
