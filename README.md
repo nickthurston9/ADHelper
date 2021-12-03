@@ -10,6 +10,6 @@ Example in PowerShell:
 
 <code>C:\Windows\System32> . ./adhelper.ps1</code>
 
-There is also a .psm1 file that can be added as a module in PowerShell. Navigate to <code>C:\Windows\System32\PowerShell\v1.0\Modules</code> and create a folder named <code>adhelper</code>
+There is also a .psm1 file that can be added as a module in PowerShell. Navigate to <code>C:\Windows\System32\WindowsPowerShell\v1.0\Modules</code> and create a folder named <code>adhelper</code>
 
 Then place the <code>adhelper.psm1</code> file inside of the adhelper folder and you can then use <code>Import-Module adhelper</code> to use ADHelper as a module.
